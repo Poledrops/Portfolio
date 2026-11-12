@@ -25,7 +25,7 @@ export const project = {
 export const content = {
   tr: {
     lang: 'tr',
-    title: 'Yazılım Geliştirici · Mobil Developer · Web Developer',
+    roles: ['Yazılım Geliştirici', 'Mobil Developer', 'Web Developer'],
     alt: 'Murat Akpınar profil fotoğrafı',
     about: {
       h: 'Hakkımda',
@@ -57,7 +57,7 @@ export const content = {
   },
   en: {
     lang: 'en',
-    title: 'Software Developer · Mobile Developer · Web Developer',
+    roles: ['Software Developer', 'Mobile Developer', 'Web Developer'],
     alt: 'Profile photo of Murat Akpınar',
     about: {
       h: 'About',

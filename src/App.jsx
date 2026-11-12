@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { content, email, links, project, skills } from './data.js'
+import Icon from './Icon.jsx'
 import photo from './assets/profile.webp'
 
 function getInitialLang() {
@@ -55,9 +56,30 @@ export default function App() {
       </div>
 
       <header className="hero">
-        <img src={photo} alt={t.alt} width="180" height="180" />
+        <img src={photo} alt={t.alt} width="168" height="168" />
         <h1>Murat Akpınar</h1>
-        <p className="muted">{t.title}</p>
+        <p className="roles">
+          {t.roles.map((r) => (
+            <span key={r}>{r}</span>
+          ))}
+        </p>
+        <div className="icons">
+          <a href={`mailto:${email}`} aria-label="Email" title="Email">
+            <Icon name="mail" />
+          </a>
+          {Object.entries(links).map(([key, l]) => (
+            <a
+              key={key}
+              href={l.href}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={l.label}
+              title={l.label}
+            >
+              <Icon name={key} />
+            </a>
+          ))}
+        </div>
       </header>
 
       <main>
@@ -77,16 +99,18 @@ export default function App() {
 
         <section>
           <h2>{t.project.h}</h2>
-          <h3>{project.name}</h3>
-          <p>{t.project.p}</p>
-          <p className="muted small">
-            {t.project.games}: {project.games.join(' · ')}
-          </p>
-          <p>
-            <a href={project.url} target="_blank" rel="noreferrer noopener">
+          <div className="project">
+            <h3>{project.name}</h3>
+            <p>{t.project.p}</p>
+            <ul className="chips small-chips">
+              {project.games.map((g) => (
+                <li key={g}>{g}</li>
+              ))}
+            </ul>
+            <a className="btn" href={project.url} target="_blank" rel="noreferrer noopener">
               {t.project.visit} →
             </a>
-          </p>
+          </div>
         </section>
 
         <section>
@@ -108,12 +132,16 @@ export default function App() {
           <h2>{t.contact.h}</h2>
           <ul className="list">
             <li>
-              <span>{t.contact.email}</span>
+              <span className="with-icon">
+                <Icon name="mail" size={16} /> {t.contact.email}
+              </span>
               <a href={`mailto:${email}`}>{email}</a>
             </li>
-            {Object.values(links).map((l) => (
-              <li key={l.label}>
-                <span>{l.label}</span>
+            {Object.entries(links).map(([key, l]) => (
+              <li key={key}>
+                <span className="with-icon">
+                  <Icon name={key} size={16} /> {l.label}
+                </span>
                 <a href={l.href} target="_blank" rel="noreferrer noopener">
                   {l.text}
                 </a>
@@ -123,7 +151,7 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="muted small">© {new Date().getFullYear()} Murat Akpınar</footer>
+      <footer>© {new Date().getFullYear()} Murat Akpınar</footer>
     </div>
   )
 }
