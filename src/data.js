@@ -47,7 +47,12 @@ export const content = {
     },
     education: {
       h: 'Eğitim',
-      items: [{ name: 'İstanbul Arel Üniversitesi', detail: 'Bilgisayar Programcılığı' }],
+      items: [
+        { name: 'İstanbul Arel Üniversitesi', detail: 'Bilgisayar Programcılığı' },
+        { name: 'Arıbilgi Eğitim Kurumları', detail: 'React Native Belgesi' },
+        { name: 'Arıbilgi Eğitim Kurumları', detail: 'JavaScript Belgesi' },
+        { name: 'English Time', detail: 'B2 Belgesi' },
+      ],
     },
     languages: {
       h: 'Diller',
@@ -79,7 +84,12 @@ export const content = {
     },
     education: {
       h: 'Education',
-      items: [{ name: 'Istanbul Arel University', detail: 'Computer Programming' }],
+      items: [
+        { name: 'Istanbul Arel University', detail: 'Computer Programming' },
+        { name: 'Arıbilgi Eğitim Kurumları', detail: 'React Native Certificate' },
+        { name: 'Arıbilgi Eğitim Kurumları', detail: 'JavaScript Certificate' },
+        { name: 'English Time', detail: 'B2 Certificate' },
+      ],
     },
     languages: {
       h: 'Languages',

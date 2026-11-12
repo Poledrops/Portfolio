@@ -17,7 +17,7 @@ function List({ items }) {
   return (
     <ul className="list">
       {items.map((it) => (
-        <li key={it.name}>
+        <li key={`${it.name}-${it.detail}`}>
           <span>{it.name}</span>
           <span className="muted">{it.detail}</span>
         </li>
