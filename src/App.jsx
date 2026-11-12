@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { content, email, links, project, skills } from './data.js'
 import Icon from './Icon.jsx'
-import photo from './assets/profile.webp'
+import photo1x from './assets/profile-168.jpg'
+import photo2x from './assets/profile-336.jpg'
+import photo3x from './assets/profile-504.jpg'
 
 function getInitialLang() {
   try {
@@ -56,7 +58,13 @@ export default function App() {
       </div>
 
       <header className="hero">
-        <img src={photo} alt={t.alt} width="168" height="168" />
+        <img
+          src={photo2x}
+          srcSet={`${photo1x} 1x, ${photo2x} 2x, ${photo3x} 3x`}
+          alt={t.alt}
+          width="168"
+          height="168"
+        />
         <h1>Murat Akpınar</h1>
         <p className="roles">
           {t.roles.map((r) => (
