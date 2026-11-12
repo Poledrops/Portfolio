@@ -82,7 +82,7 @@ a:hover {
 .hero img {
   width: 168px;
   height: 168px;
-  border-radius: 50%;
+  border-radius: 32px;
   object-fit: cover;
   object-position: 50% 5%;
   box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--line), 0 16px 36px -12px rgba(79, 70, 229, 0.35);
