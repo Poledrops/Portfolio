@@ -85,7 +85,9 @@ export default function App() {
       <main>
         <section>
           <h2>{t.about.h}</h2>
-          <p>{t.about.p}</p>
+          {t.about.ps.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
         </section>
 
         <section>

@@ -29,7 +29,11 @@ export const content = {
     alt: 'Murat Akpınar profil fotoğrafı',
     about: {
       h: 'Hakkımda',
-      p: 'Teknolojiyi seven, gündemi takip eden ve araştırmacı bir kişiliğe sahibim. React ve React Native ile web ve mobil uygulamalar geliştiriyorum.',
+      ps: [
+        'Merhaba, ben Murat. Teknolojiye ve teknoloji dünyasının hızla değişen gündemine meraklı, araştırmayı ve öğrenmeyi seven bir yazılım geliştiriciyim. Bir konuyu yüzeyde bırakmam; nasıl çalıştığını anlayana kadar kurcalar, öğrendiklerimi ürettiğim projelere taşırım.',
+        'React ve React Native ile web ve mobil uygulamalar geliştiriyor, sunucu tarafında Express.js ve MongoDB ile çalışıyorum. Cen Medya ve Panates Bilişim’deki stajlarımda sahada deneyim kazandım; bağımsız oyun stüdyosu CypnosGames’in yapımcısıyım.',
+        'Fikirleri çalışan, sade ve kullanışlı ürünlere dönüştürmeyi seviyorum.',
+      ],
     },
     skills: { h: 'Yetenekler' },
     project: {
@@ -66,7 +70,11 @@ export const content = {
     alt: 'Profile photo of Murat Akpınar',
     about: {
       h: 'About',
-      p: 'I love technology, follow current events and have a curious, research-minded personality. I build web and mobile applications with React and React Native.',
+      ps: [
+        'Hi, I’m Murat. I’m a software developer who is curious about technology and the fast-moving tech landscape, and who loves to research and learn. I don’t leave a topic at the surface — I dig until I understand how it works, then bring what I learn into the projects I build.',
+        'I build web and mobile applications with React and React Native, and work on the server side with Express.js and MongoDB. I gained hands-on experience during my internships at Cen Medya and Panates Bilişim, and I’m the producer of CypnosGames, an independent game studio.',
+        'I enjoy turning ideas into simple, useful products that work.',
+      ],
     },
     skills: { h: 'Skills' },
     project: {
