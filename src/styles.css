@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+}
+
+.muted {
+  color: #666;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+/* Language switch */
+.lang {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.lang button {
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.lang button.on {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+/* Top: photo + name */
+.hero {
+  padding: 16px 0 40px;
+  text-align: center;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  object-fit: cover;
+  object-position: 50% 5%;
+}
+
+.hero h1 {
+  margin: 20px 0 4px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin: 0;
+}
+
+/* Info sections */
+section {
+  padding: 24px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: #666;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.list,
+.chips {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.list li > :last-child {
+  text-align: right;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips li {
+  padding: 2px 12px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+footer {
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
