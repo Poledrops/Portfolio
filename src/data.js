@@ -30,9 +30,7 @@ export const content = {
     about: {
       h: 'Hakkımda',
       ps: [
-        'Merhaba, ben Murat. Teknolojiye ve teknoloji dünyasının hızla değişen gündemine meraklı, araştırmayı ve öğrenmeyi seven bir yazılım geliştiriciyim. Bir konuyu yüzeyde bırakmam; nasıl çalıştığını anlayana kadar kurcalar, öğrendiklerimi ürettiğim projelere taşırım.',
-        'React ve React Native ile web ve mobil uygulamalar geliştiriyor, sunucu tarafında Express.js ve MongoDB ile çalışıyorum. Cen Medya ve Panates Bilişim’deki stajlarımda sahada deneyim kazandım; bağımsız oyun stüdyosu CypnosGames’in yapımcısıyım.',
-        'Fikirleri çalışan, sade ve kullanışlı ürünlere dönüştürmeyi seviyorum.',
+        'Merhaba, ben Murat. Teknolojiye ve teknoloji dünyasının hızla değişen gündemine meraklı, araştırmacı ruhlu bir yazılım geliştiriciyim; bir konuyu yüzeyde bırakmaz, nasıl çalıştığını anlayana kadar kurcalarım. React ve React Native ile web ve mobil uygulamalar geliştiriyor, sunucu tarafında Express.js ve MongoDB ile çalışıyorum. Cen Medya ve Panates Bilişim’deki stajlarımda sahada deneyim kazandım, bağımsız oyun stüdyosu CypnosGames’in yapımcısıyım; fikirleri çalışan, sade ve kullanışlı ürünlere dönüştürmeyi seviyorum.',
       ],
     },
     skills: { h: 'Yetenekler' },
@@ -71,9 +69,7 @@ export const content = {
     about: {
       h: 'About',
       ps: [
-        'Hi, I’m Murat. I’m a software developer who is curious about technology and the fast-moving tech landscape, and who loves to research and learn. I don’t leave a topic at the surface — I dig until I understand how it works, then bring what I learn into the projects I build.',
-        'I build web and mobile applications with React and React Native, and work on the server side with Express.js and MongoDB. I gained hands-on experience during my internships at Cen Medya and Panates Bilişim, and I’m the producer of CypnosGames, an independent game studio.',
-        'I enjoy turning ideas into simple, useful products that work.',
+        'Hi, I’m Murat. I’m a software developer with a researcher’s mindset, curious about technology and its fast-moving agenda; I never leave a topic at the surface and dig until I understand how it works. I build web and mobile applications with React and React Native and work on the server side with Express.js and MongoDB. I gained hands-on experience during my internships at Cen Medya and Panates Bilişim, and I’m the producer of CypnosGames, an independent game studio; I enjoy turning ideas into simple, useful products that work.',
       ],
     },
     skills: { h: 'Skills' },
